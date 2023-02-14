@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".ActivityNotification">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="7dp"
+        android:background="#9F000000"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EFU Calculator"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/bg_light"
+            android:textSize="25dp"></TextView>
+
+
+
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        app:cardBackgroundColor="#9F000000"
+        android:layout_marginTop="20dp"
+        android:elevation="8dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp">
+        <LinearLayout
+            android:id="@+id/lout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="7dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="15dp"
+                app:cardBackgroundColor="#9F000000"
+                app:cardCornerRadius="10dp">
+                <RelativeLayout
+                    android:background="#9F000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txt_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/bg_light"
+                        android:textSize="80dp"
+                        android:layout_marginHorizontal="7dp"
+                        android:layout_centerInParent="true"
+                        android:text="00"></TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/bg_light"
+                        android:gravity="center_vertical"
+                        android:textSize="40dp"
+                        android:text="Rs"
+                        android:layout_toRightOf="@+id/txt_result"></TextView>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <EditText
+                android:id="@+id/edit_tInvest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:maxLength="15"
+                android:inputType="number"
+                android:foregroundTint="@color/bg_light"
+                android:textColorHint="@color/bg_color"
+                android:textColor="@color/bg_light"
+                android:layout_marginHorizontal="15dp"
+                android:minHeight="55dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/card_shadow"
+                android:hint="Total Investment"></EditText>
+
+
+            <EditText
+                android:id="@+id/edit_profit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:maxLength="15"
+                android:inputType="number"
+                android:foregroundTint="@color/bg_light"
+                android:textColorHint="@color/bg_color"
+                android:textColor="@color/bg_light"
+                android:layout_marginHorizontal="15dp"
+                android:minHeight="55dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/card_shadow"
+                android:hint="Profit"></EditText>
+
+            <EditText
+                android:id="@+id/edit_pInvest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:maxLength="15"
+                android:inputType="number"
+                android:foregroundTint="@color/bg_light"
+                android:textColorHint="@color/bg_color"
+                android:textColor="@color/bg_light"
+                android:layout_marginHorizontal="15dp"
+                android:minHeight="55dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/card_shadow"
+                android:hint="Partner Investment"></EditText>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_calculator"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:elevation="16dp"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/white"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@drawable/shape_btn"
+                    android:layout_gravity="right"
+                    android:drawableTint="@color/green_glow"
+                    android:drawableRight="@drawable/ic_baseline_double_arrow_24"
+                    android:text="Calculate"></Button>
+
+                <Button
+                    android:id="@+id/btn_clear"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:elevation="16dp"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/white"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@drawable/shape_btn"
+                    android:drawableLeft="@drawable/ic_baseline_delete_24"
+                    android:text="Clear"></Button>
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>

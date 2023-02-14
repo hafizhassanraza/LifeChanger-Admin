@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear_layoutbottamsheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:elevation="16dp"
+
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0.1dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+
+    <LinearLayout
+
+
+        android:elevation="30dp"
+        android:background="@drawable/bottomsheet_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/name"
+                android:layout_centerVertical="true"
+                android:src="@drawable/admin_png" />
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true"
+                android:textSize="20sp"
+                android:layout_marginLeft="2dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btn_cEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:layout_marginRight="10dp"
+                android:text="mial"
+                android:layout_alignParentRight="true"
+                android:backgroundTint="@color/bg_color"
+                android:src="@drawable/ic_baseline_edit_24">
+            </ImageButton>
+
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/txt_admin_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="Muhammad Mujahid Khokhar"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/bg_color"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/shape_line">
+        </View>
+        <LinearLayout
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imgw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/whatsapp"></ImageView>
+                <TextView
+                    android:id="@+id/cwNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="03001111111"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imgw"
+                    android:layout_centerVertical="true">
+                </TextView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginVertical="10dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imgt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/telephone"></ImageView>
+                <TextView
+                    android:id="@+id/cpNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="03001111111"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imgt"
+                    android:layout_centerVertical="true">
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15sp">
+                <ImageView
+                    android:id="@+id/imgm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/gmail"></ImageView>
+                <TextView
+                    android:id="@+id/cmAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mujahidkhokhar@gmail.com"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imgm"
+                    android:layout_centerVertical="true">
+                </TextView>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

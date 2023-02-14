@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bitsnest.lifechanger_admin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/luncher_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/luncher_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LifeChangerAdmin">
+        <activity android:name=".ActivityProfits"></activity>
+        <activity android:name=".ActivityInvestor" />
+        <activity android:name=".ActivityTransaction" />
+        <activity android:name=".ActivityWithdrawDetails" />
+        <activity android:name=".ActvityInvDetails" />
+        <activity android:name=".ActivityWithdraw" />
+        <activity android:name=".ActivityInvestment" />
+        <activity android:name=".ActivityContacts" />
+        <activity android:name=".ActivityDepositAccount" />
+        <activity android:name=".Calculator" />
+        <activity android:name=".ActivitySignIn" />
+        <activity android:name=".ActivityNotification" />
+        <activity android:name=".ActivityAnnouncement" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
